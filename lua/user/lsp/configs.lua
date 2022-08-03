@@ -12,7 +12,7 @@ lsp_installer.setup({
 })
 
 for _, server in ipairs(lsp_installer.get_installed_servers()) do
-    local opts = {
+  local opts = {
     on_attach = require("user.lsp.handlers").on_attach,
     capabilities = require("user.lsp.handlers").capabilities,
   }
@@ -22,3 +22,5 @@ for _, server in ipairs(lsp_installer.get_installed_servers()) do
   end
   lspconfig[server.name].setup(opts)
 end
+
+-- vim.cmd('autocmd CursorHold * lua vim.diagnostic.open_float()')

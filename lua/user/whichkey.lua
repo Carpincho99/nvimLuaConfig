@@ -185,6 +185,13 @@ local mappings = {
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
 
+  i = {
+    name = "Spellcheck",
+    e = { "<cmd>setlocal spell spelllang=en <cr>", "English" },
+    s = { "<cmd>setlocal spell spelllang=es <cr>", "Spanish" },
+    n = { "<cmd>setlocal nospell <cr>", "Disable" },
+  },
+
   -- r = {
   --   name = "Run .c/.py",
   --   v = { "<cmd>w <bar> vsplit <bar> terminal gcc -Wall -std=c99 -pedantic-errors % -lm && ./a.out <CR>", "vSplit" },

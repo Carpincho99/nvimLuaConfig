@@ -14,27 +14,25 @@ M.setup = function()
   end
 
   -- local config = {
-    -- disable virtual text
-    -- virtual_text = false,
-    -- show signs
-    -- signs = {
-    -- 	active = signs,
-    -- },
-    -- update_in_insert = true,
-    -- underline = true,
-    -- severity_sort = true,
-    -- float = {
-    -- 	focusable = false,
-    -- 	style = "minimal",
-    -- 	border = "rounded",
-    -- 	source = "always",
-    -- 	header = "",
-    -- 	prefix = "",
-    -- },
+  --   virtual_text = false,
+  --   signs = {
+  --     active = signs,
+  --   },
+  --   update_in_insert = true,
+  --   underline = true,
+  --   severity_sort = true,
+  --   float = {
+  --     focusable = false,
+  --     style = "minimal",
+  --     border = "rounded",
+  --     source = "always",
+  --     header = "",
+  --     prefix = "",
+  --   },
   -- }
-
+  --
   -- vim.diagnostic.config(config)
-
+  --
   vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
     border = "rounded",
     width = 60,
