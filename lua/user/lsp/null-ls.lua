@@ -18,5 +18,6 @@ null_ls.setup({
     diagnostics.cppcheck,
     -- diagnostics.flake8
     require("null-ls").builtins.completion.spell,
+    require("null-ls").builtins.diagnostics.chktex,
   },
 })
