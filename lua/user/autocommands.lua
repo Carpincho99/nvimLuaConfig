@@ -35,5 +35,8 @@ vim.cmd [[
 
 ]]
 -- vim.cmd "augroup _terminal autocmd TermOpen * startinsert autocmd TermOpen * setlocal nornu augroup end"
+-- Start terminal in insert mode
 vim.api.nvim_create_autocmd("TermOpen", {command = "startinsert"})
-vim.api.nvim_create_autocmd("BufWritePre", {command = "lua vim.lsp.buf.formatting()"})
+
+-- Formating on save
+-- vim.api.nvim_create_autocmd("BufWritePre", {command = "lua vim.lsp.buf.formatting()"})
