@@ -36,7 +36,7 @@ vim.cmd [[
 ]]
 -- vim.cmd "augroup _terminal autocmd TermOpen * startinsert autocmd TermOpen * setlocal nornu augroup end"
 vim.api.nvim_create_autocmd("TermOpen", { command = "startinsert" })
-vim.api.nvim_create_autocmd("BufWritePre", { command = "lua vim.lsp.buf.formatting()" })
+-- vim.api.nvim_create_autocmd("BufWritePre", { command = "lua vim.lsp.buf.formatting()" })
 
 -- lsp float
 -- vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]

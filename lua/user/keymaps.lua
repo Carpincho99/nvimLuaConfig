@@ -86,6 +86,9 @@ keymap("n", "<leader>r", ":w | terminal clear && gcc % -Wall -pedantic-errors -l
 -- Search
 keymap("n", "<Space>", "/", opts)
 
+-- save and quit
+keymap("n", "<leader>q", "<cmd>wq!<cr>", opts)
+
 -- Hop
 keymap('', 'f',
   "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>"
