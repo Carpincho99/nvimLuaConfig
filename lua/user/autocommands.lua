@@ -33,6 +33,9 @@ vim.cmd [[
     autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
   augroup end
 
+  augroup _80_line
+    autocmd BufWinEnter * :let &colorcolumn=join(range(81,81),",")
+  augroup end
 ]]
 -- vim.cmd "augroup _terminal autocmd TermOpen * startinsert autocmd TermOpen * setlocal nornu augroup end"
 vim.api.nvim_create_autocmd("TermOpen", { command = "startinsert" })
