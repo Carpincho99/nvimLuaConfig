@@ -89,6 +89,9 @@ keymap("n", "<Space>", "/", opts)
 -- save and quit
 keymap("n", "<leader>q", "<cmd>wq!<cr>", opts)
 
+-- @q unmap
+keymap("n", "q", "<Nop>", opts)
+
 -- Hop
 keymap('', 'f',
   "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>"
