@@ -81,7 +81,7 @@ keymap("i", "<C-h>", "<C-o>h", opts)
 keymap("i", "<C-l>", "<C-o>l", opts)
 
 -- cTest
-keymap("n", "<leader>r", ":w | terminal clear && gcc % -Wall -pedantic-errors -lm -std=c99 && ./a.out <cr>", opts);
+-- keymap("n", "<leader>r", ":w | terminal clear && gcc % -Wall -pedantic-errors -lm -std=c99 && ./a.out <cr>", opts);
 
 -- Search
 keymap("n", "<Space>", "/", opts)
